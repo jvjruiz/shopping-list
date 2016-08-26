@@ -1,17 +1,5 @@
-
-
-
-
-
-
 //when click check, highlight box aka change color of box
-
- 
-
-
 $(document).ready(function() {
-
-
 
 // make box with class shopping item name and buttons
 	$("form").submit(function(event) {
@@ -44,5 +32,18 @@ $(document).ready(function() {
 		$(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
 	});
 
+//two buttons
+//first button when clicked on display checked off items
+//second button when click on display uncheked items
+
+	$('.feature-box').on('click','.checked',function(event) {
+		$(".shopping-item").closest('li').hide()
+		$(".shopping-item__checked").closest('li').show()
+	});
+
+	$('.feature-box').on('click','.unchecked',function(event) {
+		$(".shopping-item").closest('li').show()
+		$(".shopping-item__checked").closest('li').hide()	
+	});
 
 });

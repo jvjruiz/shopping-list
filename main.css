@@ -45,3 +45,11 @@ button:hover {
 .shopping-item__checked {
   text-decoration: line-through;
 }
+
+.feature-box {
+  color:black;  
+}
+
+.checked {
+  color:black;
+}
